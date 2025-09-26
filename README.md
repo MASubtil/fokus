@@ -1,12 +1,8 @@
 # fokus
-Next.js (App Router) + TypeScript + Tailwind + Prisma (SQLite)
+Next.js + TS + Tailwind + Prisma
 
-## Setup rápido
-1) `npm i`
-2) `cp .env.example .env`
-3) `npx prisma migrate dev --name init`
-4) `npm run dev` → http://localhost:3000
-
-## Notas
-- DB local: `DATABASE_URL="file:./dev.db"`
-- API demo: `GET /api/items`, `POST /api/items { name }`
+## Quick start
+npm i
+copy .env.example .env
+npx prisma migrate dev --name init
+npm run dev
