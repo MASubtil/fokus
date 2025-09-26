@@ -1,8 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Base Fokus */
 html, body { height: 100%; }
-body { @apply bg-zinc-950 text-zinc-100 antialiased; }
-.container { @apply max-w-3xl mx-auto px-4; }
+
+/* usa cores equivalentes ao zinc-950 e zinc-100 sem @apply */
+body {
+  background-color: #09090b; /* zinc-950 */
+  color: #e4e4e7;            /* zinc-200/100 mix */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* container ≈ max-w-3xl mx-auto px-4, sem @apply */
+.container {
+  max-width: 48rem;      /* 768px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
