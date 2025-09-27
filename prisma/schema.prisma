@@ -12,3 +12,10 @@ model Item {
   name      String
   createdAt DateTime @default(now())
 }
+
+model FocusSession {
+  id        Int      @id @default(autoincrement())
+  startedAt DateTime @default(now())
+  duration  Int
+  note      String?
+}
