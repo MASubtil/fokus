@@ -14,5 +14,5 @@ Env:
 
 ```bash
 # .env
-DATABASE_URL="file:./dev.db"
+DATABASE_URL_UNPOOLED="postgresql://neondb_owner:npg_wyez75MjIbOn@ep-withered-meadow-abqwucqf.eu-west-2.aws.neon.tech/neondb?sslmode=require"
 ```
