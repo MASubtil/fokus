@@ -24,8 +24,8 @@ export default function AddPage() {
       if (!r.ok) throw new Error(j?.error || "Erro");
       setName("");
       setMsg("Item adicionado ✅");
-    } catch (e: any) {
-      setErr(e.message || "Erro");
+    } catch (e: unknown) {
+      setErr(e instanceof Error ? e.message : "Erro");
     } finally {
       setLoading(false);
     }
